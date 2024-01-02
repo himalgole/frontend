@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category selector</title>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .selector
+        {
+            display: flex;
+        }
+        .selector .select 
+        {
+            cursor: pointer;
+            border: 2px solid #ddd;
+            padding: 2px 5px;
+            transition: all 0.7s ease;
+        }
+        .selector .select:hover
+        {
+            background-color: #727272;
+            color: aliceblue;
+            border: 2px solid #aaa;
+        }
+        .active
+        {
+            background-color: #727272;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="selector">
+        <div class="select select-1" onclick="select(1)">All</div>
+        <div class="select select-2" onclick="select(2)">High</div>
+        <div class="select select-3" onclick="select(3)">Medium</div>
+        <div class="select select-4" onclick="select(4)">Low</div>
+    </div>
+    <script>
+        var evt = 1;
+        select(evt);
+        function select(evt)
+        {
+
+            var select = document.querySelectorAll(".select");
+            console.log(select)
+            for(var i = 0;i<select.length;i++)
+            {
+                console.log(select[i])
+                console.log(select[i].classList.remove("active"))
+            }
+            select[evt-1].classList.add("active")
+            console.log(select[evt-1])
+        }
+    </script>
+</body>
+</html>

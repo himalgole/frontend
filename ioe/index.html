@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOE Main Site</title>
+    <link rel="stylesheet" href="assets/css/ioestyles.css">
+</head>
+
+<body class="frpage">
+    <header class="header fr-header">
+        <h2>
+            <a href="index.html">Institute Of Engineering</a>
+        </h2>
+        <div class="login-action">
+            <button class="login-show-btn">
+                Log In
+            </button>
+            <div class="logins">
+                <a href="login.html">Bachelors</a>
+                <a href="login.html">Masters</a>
+            </div>
+
+        </div>
+
+    </header>
+    <h3>
+        IOE Notice Board
+    </h3>
+
+    <hr>
+    <div class="notice-container">
+        <div class="category-selector">
+            <div class="all select active">All</div>
+            <div class="routine select">Routine</div>
+            <div class="exam-form select">Exam Form</div>
+            <div class="admission select">admission</div>
+            <div class="others select">others</div>
+        </div>
+        <div class="notice">
+            <div class="sn">
+                <p>1</p>
+            </div>
+            <div class="title">
+                <p>Routine</p>
+            </div>
+            <div class="desc">
+                <p>BE/BArch all year first part routine.</p>
+            </div>
+            <div class="action"><a href="#">Download</a></div>
+        </div>
+        <div class="notice">
+            <div class="sn">
+                <p>2</p>
+            </div>
+            <div class="title">
+                <p>Routine</p>
+            </div>
+            <div class="desc">
+                <p>BE/BArch all year first part routine.</p>
+            </div>
+            <div class="action"><a href="#">Download</a></div>
+        </div>
+        <div class="paginator">
+            <a href="" class="page">1</a>
+            <a href="" class="page">2</a>
+            <a href="" class="page">3</a>
+            <a href="" class="page">4</a>
+        </div>
+    </div>
+
+    <script defer>
+        document.querySelector(".login-show-btn").addEventListener("click", function () {
+            document.querySelector(".login-action").classList.toggle("show")
+        })
+            
+    </script>
+</body>
+
+</html>

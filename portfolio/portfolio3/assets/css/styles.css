@@ -1,0 +1,278 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+.dot
+{
+    height: 10px;
+    width: 12px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #ccc;
+}
+.dot1
+{
+    background-color: #ff7bac;
+}
+.dot2
+{
+    background-color: #111;
+}
+.removeloader
+{
+    display: none;
+}
+nav
+{
+    /* background-color: aqua; */
+    position: relative;
+    padding-block: 10px;
+}
+nav img
+{
+    position: absolute;
+    top: 0;
+    transform: rotateZ(20deg);
+}
+nav .menu
+{
+    margin-left: 55px;
+}
+nav .menu a
+{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    transition: all 0.6s ease;
+    color: goldenrod;
+}
+nav .menu a.active
+{
+    color: #ff7bac;
+}
+nav .menu a:hover
+{
+    color: #ff7bac;
+}
+body
+{
+    padding: 10px 20px;
+}
+.intro
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+   
+    /* background-color: aqua; */
+}
+.intro img
+{
+    border: none;
+    border-radius: 5px;
+    margin-inline: 30px;
+}
+
+.desc
+{
+    width: 70%;
+    margin-top: 10px;
+}
+.desc .written
+{
+    margin-top: 30px;
+}
+.desc p
+{
+    font-size: 23px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.below
+{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.below h2
+{
+    color: #ff7bac;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skill-container
+{
+    width: 100%;
+    display: flex;
+    margin-block: 10px;
+
+}
+.start
+{
+    display: flex;
+}
+.skills
+{
+    min-width: 330px;
+    margin-right: 70px;
+}
+.skill-row-container
+{
+    margin-block: 10px;
+    padding-block: 10px;
+}
+.skill-row 
+{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ff7bac;
+    border-bottom: 10px solid #ccc;
+    padding: 10px 5px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.progress
+{
+    height: 10px;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.pr
+{
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.project-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+    gap: 10px;
+    margin-block: 10px;
+    padding-block: 10px;
+}
+.btn-cv
+{
+    margin-block: 10px;
+    background-color: #ff7bac;
+    padding: 5px;
+    color: #fff;
+    border: 2px solid #bbb;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-cv:active
+{
+    background-color: #bbb;
+}
+.contact-container
+{
+    margin-block: 10px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.profile-container img
+{
+    border-radius: 50%;
+}
+.profile-bio
+{
+    max-width: 400px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.bio-row
+{
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+}
+.bio-row .key
+{
+    font-size: 20px;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+}
+.bio-row .value
+{
+    font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.c-skill-row-container
+{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+   gap: 10px;
+}
+
+.skill-circle
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    background-image: conic-gradient(#000 270deg,aliceblue 0deg);
+}
+.circular-progress
+{
+    height: 86px;
+    width: 86px;
+    border-radius: 50%;
+    background-color: #ddd;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff7bac;
+}
+
+.backend
+{
+    padding-left: 50px;
+}
+
+.contact-form
+{
+    padding-top: 50px;
+}
+.contact-container textarea
+{
+    width: 100%;
+    resize: none;
+}
+
+.social-links
+{
+    padding-top: 15px;
+}
+.social-links i
+{
+    padding-right: 10px;
+}

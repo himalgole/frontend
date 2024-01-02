@@ -1,0 +1,30 @@
+/* break point - 880px */
+
+@media(max-width: 880px)
+{
+    .container .left
+    {
+        display: none;
+    }
+    .container .right {
+        width: 100%;
+    }
+    .container.expanded .right
+    {
+        width: 100%;
+    }
+    .container .mid
+    {
+        display: none;
+    }
+    .mobile-sidebar
+    {
+        display: block;
+    }
+  
+}
+
+@media(max-width: 650px)
+{
+    
+}

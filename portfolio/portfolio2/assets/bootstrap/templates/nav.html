@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fascinating Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:#fff;
+            padding: 10px;
+            position: relative;
+            box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.139);
+        }
+
+        nav .menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 400px;
+            list-style: none;
+        }
+
+        nav .menu li a {
+            font-size: 20px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        nav .menu li a::before {
+            content: '';
+            position: absolute;
+            height: 2.5px;
+            width: 0px;
+            background-color: red;
+            z-index: 99;
+            top: 100%;
+            transition: all 0.2s ease-out;
+        }
+        nav .menu li a:hover::before
+        {
+           
+            width: 100%;
+        }
+
+        .dropdown-list {
+            position: absolute;
+            list-style: none;
+            background-color: #fff;
+            padding: 10px;
+            display: none;
+            box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.139);
+        }
+
+        .dropdown:hover > .dropdown-list {
+            display: block;
+        }
+        .menu-btn
+        {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            display: none;
+            border: 2px solid red;
+            padding: 6px;
+            cursor: pointer;
+
+        }
+        .dropdown-list li a
+        {
+            font-size: 18px !important;
+        }
+        /* responsiveness for nav */
+        @media(max-width: 1040px)
+        {
+            .active-menu
+            {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100% !important;
+                display: flex !important;
+                flex-direction: column;
+                background-color: #fff;
+                padding: 5px;
+                box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.139);
+                
+            }
+            nav .menu
+            {
+                display: none; 
+            }
+            .dropdown-list
+            {
+                position: relative;
+            }
+            nav .menu-btn
+            {
+                display: block;
+            }
+        
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">LOGO</a>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Notice</a></li>
+            <li class="dropdown">
+                <a href="#">Downloads</a>
+                <ul class="dropdown-list">
+                    <li><a href="C:\Users\himal\OneDrive\Desktop\afterGradPreparation">Notes</a></li>
+                    <li><a href="C:\Users\himal\OneDrive\Desktop\Essentials\resume" download>My Resume</a></li>
+                    <li><a href="#">Old Sets</a></li>
+                </ul>
+            </li>
+            <li >
+                <a href="#">Gallery</a>
+            </li>
+        </ul>
+        <button class="menu-btn">Menu</button>
+    </nav>
+    <script>
+        var menu_click = document.querySelector("nav .menu-btn");
+        var menu = document.querySelector("nav .menu")
+        menu_click.addEventListener("click",function(){
+            menu.classList.toggle("active-menu")
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #text-container {
+      text-align: center;
+      font-size: 36px;
+      padding: 20px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      animation: fadeInOut 5s infinite;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    #text-container:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+<div id="text-container"></div>
+
+<script>
+  const texts = [
+    "Welcome to my portfolio!",
+    "Coding is my passion.",
+    "Creativity knows no bounds.",
+    "Innovation drives progress.",
+    "Never stop learning.",
+    "The journey is the reward.",
+    "Dream big, work hard.",
+    "Artificial Intelligence is fascinating.",
+    "Explore, learn, create.",
+    "Simplicity is the ultimate sophistication."
+  ];
+
+  const textContainer = document.getElementById('text-container');
+  let index = 0;
+
+  function displayText() {
+    textContainer.textContent = texts[index];
+    index = (index + 1) % texts.length;
+  }
+
+  // Display the first text when the page loads
+  displayText();
+
+  // Change the displayed text every 3 seconds
+  setInterval(displayText, 3000);
+</script>
+
+</body>
+</html>

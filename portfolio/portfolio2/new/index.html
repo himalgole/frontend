@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himal Gole</title>
+    <link rel="shortcut icon" href="assets/photos/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body onload="loaded()">
+    <label for="mode" class="mode-change-btn" onclick="mode_change()"></label>
+    <input type="checkbox" name="mode" id="mode">
+    <header class="header">
+        <a href="index.html" class="brand"><span style="color: rgb(229, 79, 79);">H</span>imal</a>
+        <nav>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#experience" class="nav-item">Experience</a>
+            <a href="#skill" class="nav-item">Skills</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <a href="#" id="cv">Download CV</a>
+        </nav>
+        <div class="menu-icon" onclick="menu_display()">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="bar bar-3"></div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="gallery">
+            <div class="box">
+                <div class="card front"><a href="">1. Responsiveness</a></div>
+                <div class="card back"><a href="">6. Consistency</a></div>
+                <div class="card left"><a href="">2. UI/UX Design</a></div>
+                <div class="card right"><a href="">4. Economic</a></div>
+                <div class="card top"><a href="">5. Flexibility</a></div>
+                <div class="card bottom"><a href="">3. Backend Supports</a></div>
+            </div>
+        </div>
+        <div class="desc">
+            <h2>Welcome, Geek!</h2>
+            <p>I develop full functioning websites.</p>
+            <button></button>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <h2>I Worked On</h2>
+        <div class="container experience-container">
+            <div class="work work-1">Project 1</div>
+            <div class="work work-2">Project 2</div>
+            <div class="work work-3">Project 3</div>
+            <div class="work work-4">Project 4</div>
+            <div class="work work-5">Project 5</div>
+            <div class="work work-6">
+                <p>Coming soon</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="skill" id="skill">
+        <h2>My Skills</h2>
+        <div class="container skill-container">
+            <div class="skills frontend">
+                <h3>"Frontend proficiency"</h3>
+                <div class="skill-row sk-html">
+                    <a href="">HTML</a>
+                    <p>90%</p>
+                </div>
+                <div class="skill-row sk-css">
+                    <a href="">CSS</a>
+                    <p>90%</p>
+                </div>
+                <div class="skill-row sk-bootstrap">
+                    <a href="">Bootstrap</a>
+                    <p>80%</p>
+                </div>
+                <div class="skill-row sk-react">
+                    <a href="">React</a>
+                    <p>70%</p>
+                </div>
+            </div>
+            <div class="skills backend">
+                <h3>"Backend proficiency"</h3>
+                <div class="skill-circle">
+                    <a href="">Python</a>
+                    <p>80%</p>
+                    <span class="inside-ring"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <hr>
+        <div class="container contact-container">
+            <div class="profile">
+                <img src="assets/photos/prof.jpg" alt="" width="140" id="pro">
+                <div class="contacts">
+                    <div class="contacts-row">
+                        <ul class="social-network">
+                            <li><a href="https://www.facebook.com"><img src="{% static 'photos/images.png' %}"
+                                        width="19"></a></li>
+                            <li><a href="#"><img src="assets/photos/download.png" width="19"></a></li>
+                            <li><a href="#"><img src="assets/photos/download (1).png" width="19"></a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts-row">
+                        <p>Mobile No.</p>
+                        <a href="">9818813635</a>
+                    </div>
+                    <div class="contacts-row">
+                        <p>Email</p>
+                        <a href="">himalgole1122@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <form action="">
+                    <textarea name="" placeholder="Leave a comment..." required></textarea>
+                    <input type="email" name="" id="" placeholder="Enter your email" required><br>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Himal Gole &copy 2023.All rights reserved.</p>
+    </footer>
+    <script src="assets/scripts/scripts.js" defer></script>
+</body>
+
+</html>

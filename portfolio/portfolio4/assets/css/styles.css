@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fine-edge {
+    padding: 5px 15px;
+}
+
+.bar {
+    height: 3px;
+    width: 80%;
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.header a svg {
+    height: 45px;
+    width: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+section h2
+{
+    color: #7f1c1c;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+    position: relative;
+}
+
+.home .intro {
+    transform: scale(0.95);
+    width: 100%;
+    top: 100px;
+    /* left: -30px; */
+    left: 5px;
+    /* background-color: yellowgreen; */
+    position: absolute;
+}
+
+.intro h2 {
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 700;
+}
+
+.social-links {
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.social-links i {
+    margin-left: 7px;
+    color: #fff;
+    transition: all 0.6s ease;
+}
+
+
+.card {
+    width: 400px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* align-content: center;
+     */
+    justify-items: center;
+}
+.text-container
+{
+    height: 40px;
+    width: 100%;
+    border: 2px solid blanchedalmond;
+}
+
+@media(max-width:950px) {
+    nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        padding: 4px 5px;
+        /* border: 2px solid rebeccapurple; */
+        width: 46px;
+        height: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    .nav-displayed
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60%;
+        padding: 10px 15px;
+    }
+    .clicked-menu .bar1
+    {
+        transform: rotateZ(35deg) translateY(7px);
+    }
+    .clicked-menu .bar2
+    {
+        transform: rotateZ(-35deg) translateY(-7px);
+
+    }
+}
+@media(max-width:900px)
+{
+    .intro 
+    {
+        padding: 50px 0;
+    }
+}
+@media(max-width: 600px) {
+    .card
+    {
+        width: 100% !important;
+    }
+}

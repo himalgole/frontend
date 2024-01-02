@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Practice Workshop</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="display panel">
+        <div class="timer">
+            <span class="min t-slot"></span>
+            <span class="second t-slot"></span>
+        </div>
+        <div class="demo"></div>
+    </div>
+    
+    <script>
+        var demo = document.querySelector(".demo")
+        var para = window.localStorage.getItem("para")
+    
+        window.addEventListener("keypress",(evt)=>{
+            key = evt.key
+            code = evt.keyCode
+            console.log(key +" code is "+code)
+        })
+        var minute = 0
+        var second = 0
+        var min_container = document.querySelector(".min")
+        var sec_container = document.querySelector(".second")
+        setInterval(() => {
+            min_container.textContent = minute
+            sec_container.textContent = second
+            second++
+            if((second%60) == 0)
+            {
+                second = 0
+                minute++
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

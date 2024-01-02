@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himal Gole</title>
+    <link rel="shortcut icon" href="assets/photos/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+
+<body onload="loaded()">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <header class="header">
+        <a href="index.html" class="brand"><span style="color: rgb(229, 79, 79);">H</span>imal</a>
+        <nav>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#experience" class="nav-item">Experience</a>
+            <a href="#skill" class="nav-item">Skills</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <a href="#" id="cv">Download CV</a>
+        </nav>
+        <div class="menu-icon" onclick="menu_display()">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="bar bar-3"></div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="gallery">
+            <div class="box">
+                <div class="card front"><a href="">front</a></div>
+                <div class="card back"><a href="">back</a></div>
+                <div class="card left"><a href="">left</a></div>
+                <div class="card right"><a href="">right</a></div>
+                <div class="card top"><a href="">top</a></div>
+                <div class="card bottom"><a href="">bottom</a></div>
+            </div>
+        </div>
+        <div class="desc">
+            <h2>Welcome Geek!</h2>
+            <p>I develop full functioning websites.</p>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <h2>I Worked On</h2>
+        <div class="container experience-container">
+            <div class="work work-1">Project 1</div>
+            <div class="work work-2">Project 2</div>
+            <div class="work work-3">Project 3</div>
+            <div class="work work-4">Project 4</div>
+            <div class="work work-5">Project 5</div>
+            <div class="work work-6">
+                <p>Coming soon</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="skill" id="skill">
+        <h2>My Skills</h2>
+        <div class="container skill-container"></div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <hr>
+        <div class="container contact-container">
+            <div class="profile">
+                <img src="assets/photos/prof.jpg" alt="" width="140" id="pro">
+                <div class="contacts">
+                    <div class="contacts-row">
+                        <ul class="social-network">
+                            <li><a href="https://www.facebook.com"><img src="assets/photos/images.png" width="19"></a>
+                            </li>
+                            <li><a href="#"><img src="assets/photos/download.png" width="19"></a></li>
+                            <li><a href="#"><img src="assets/photos/download (1).png" width="19"></a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts-row">
+                        <p>Mobile No.</p>
+                        <a href="">9818813635</a>
+                    </div>
+                    <div class="contacts-row">
+                        <p>Email</p>
+                        <a href="">himalgole1122@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <form action="">
+                    <textarea name="" placeholder="Leave a comment..." required></textarea>
+                    <input type="email" name="" id="" placeholder="Enter your email" required><br>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Himal Gole &copy 2023.All rights reserved.</p>
+    </footer>
+
+    <script src="assets/scripts/scripts.js" defer></script>
+</body>
+
+</html>

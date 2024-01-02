@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.child
+{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.a
+{
+    background-color: aqua;
+}
+.b
+{
+    background-color: rgb(128, 255, 0);
+}
+.c
+{
+    background-color: rgb(81, 15, 169);
+}

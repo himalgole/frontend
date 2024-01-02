@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexing container</title>
+    <link rel="stylesheet" href="assets/css/ioestyles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="menu-icon" id="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="logo">
+            <h2>
+                <a href="#">IOE</a>
+            </h2>
+        </div>
+       
+    </div>
+    <!-- header ends -->
+    <!-- container starts -->
+    <!-- container contains three divs namely left, mid and right -->
+    <!-- left div has been used as controller for sidebar and mid div works as the sidebar -->
+    <!-- right div is used for displaying contents according to the menu clicked on the sidebar -->
+
+    <div class="container">
+    <div class="mobile-sidebar">
+        <div class="title">
+            <div class="avatar">
+                <img src="profile.jpg" alt="profile" height="30px">
+            </div>
+            <div class="id">
+                <h3>Himal Gole</h3>
+                <a href="#">PUR075BCT035</a>
+            </div>
+        </div>
+        <!-- sidebar menu -->
+        <ul>
+            <li class="dashboard"><a href="profile.html">My Profile</a></li>
+            <li href="" class="active"><span style="padding: 3px; font-size: 20px; color: cyan;">#</span><a href="form.html">Forms</a></li>
+            <li><span style="padding: 3px; font-size: 20px; color: cyan;">#</span><a href="">See Results</a></li>
+            <li><span style="padding: 3px; font-size: 20px; color: cyan;">#</span><a href="">Settings</a></li>
+
+        </ul>
+        <div class="logout"><a href="login.html" style="text-decoration: none; color: #fff;">Log Out</a></div>
+    </div>
+        <!-- left div starts -->
+        <div class="left" id="btn" aria-expanded="false">
+            <!-- these are the controllers to expand or contract the sidebar -->
+            <span class="expand">></span>
+            <span class="contract"><</span>
+        </div>
+        <!-- left div ends -->
+        <!-- mid div starts -->
+        <div class="mid" id="mid">
+            <!-- sidebar title -->
+            <div class="title">
+                <div class="avatar">
+                    <img src="profile.jpg" alt="profile" height="30px">
+                </div>
+                <div class="id">
+                    <h3>Himal Gole</h3>
+                    <a href="#">PUR075BCT035</a>
+                </div>
+            </div>
+            <!-- sidebar menu -->
+            <ul>
+                <li class="dashboard"><a href="profile.html">My Profile</a></li>
+                <li href="" class="active"><span style="padding: 3px; font-size: 20px; color: cyan;">#</span><a href="form.html">Forms</a></li>
+                <li><span style="padding: 3px; font-size: 20px; color: cyan;">#</span><a href="">See Results</a></li>
+                <li><span style="padding: 3px; font-size: 20px; color: cyan;">#</span><a href="">Settings</a></li>
+
+            </ul>
+            <div class="logout"><a href="login.html" style="text-decoration: none; color: #fff;">Log Out</a></div>
+        </div>
+        <!-- mid div ends -->
+        <!-- right div starts -->
+        <div class="right">
+            <h3>No form available</h3>
+        </div>
+        <!-- right div ends -->
+    </div>
+    <!-- container ends  -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
